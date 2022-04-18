@@ -3,9 +3,167 @@
     padding: 0;
     box-sizing: border-box;
 }
-li {
+
+a {
+    text-decoration: none;
+}
+
+ul {
     list-style: none;
 }
-#navigation,#navigation div  {
+
+#header {
+    height: 150%;
+    background-image: url("../../assets/image/parallax-2.jpg");
+}
+
+#navigation, .nav-menu, .nav-left  {
     display: flex;
+}
+
+#navigation {
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    background-color: rgba(0,0,0,0.12);
+    justify-content: space-between;
+}
+
+#navigation, .nav-left {
+    align-items: center;
+}
+
+.header-logo {
+    padding-left: 15px;
+    padding-right: 15px;
+    img {
+        width: 160px;
+    }
+}
+
+.sub-nav,.item-info {
+    display: none;
+}
+
+.nav-menu {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.nav-item {
+    & > a {
+        text-transform: uppercase;
+    }
+    a {
+        padding: 25px;
+        display: inline-block;
+        line-height: 14px;
+        letter-spacing: 2px;
+        font-size: 14px;
+        color: #fff;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+
+}
+
+.sub-nav .item-info{
+    display: block;
+    width: 190px;
+    z-index: 1;
+    position: absolute;
+    display: block;
+    text-transform: capitalize;
+    li:hover {
+        background-color: #f9f9f9;
+    }
+    & > li {
+        padding: 15px 25px;
+        border-bottom: 1px solid #f1f1f1;
+        text-align: left;
+        background-color: #fff;
+        position: relative;
+        box-shadow: 0px 2px 5px #f1f1f1;
+        a {
+            font-size: 14px;
+            padding: 0;
+            margin: 0;
+            font-weight: normal;
+            letter-spacing: 2px;
+            color: #9a9a9a;
+            display: block;
+        }
+    }
+}
+
+.search1 {
+    a::after {
+        content: "HOT";
+        background-color: #f76570;
+        border-radius: 3px;
+        color: #fff;
+        font-size: 10px;
+        line-height: 10px;
+        padding: 3px 5px;
+        margin-left: 25px;
+    }
+}
+
+.sub-nav.sub-packages .item-info {
+    margin-left: 165px;
+    top: 0;
+    padding-top: 0;
+    padding-left: 25px;
+    width: 220px;
+    .carosel {
+        a::after {
+            content: "BEST";
+        float: right;
+        background-color: #14b9d5;
+        border-radius: 3px;
+        color: #fff;
+        font-size: 10px;
+        line-height: 10px;
+        padding: 3px 5px;
+        }
+    }
+}
+
+.tour-package {
+    & > a::after {
+        content: "";
+        float: right;
+        border-style: solid;
+        border-width: 5px 0 5px 5px;
+        border-color: transparent transparent transparent #9a9a9a;
+        margin: 1px 0 0 20px;
+    }
+}
+
+
+.nav-option {
+    padding-right: 25px;
+    i {
+        font-size: 26px;
+        color: #fff;
+    }
+}
+
+.book-now-btn {
+    a {
+    background-color: #ba71da;
+    padding: 12px 18px 10px;
+    border-radius: 30px;
+    margin-left: 25px;
+    margin: 13px 0 0 25px;
+    }
+}
+
+#header-slider {
+    box-sizing: border-box;
+    width: 1519px;
+    padding-left: 159.6px;
+    padding-right: 159.4px;
+    padding-top: 270px;
+    padding-bottom: 200px;
 }
