@@ -40,6 +40,9 @@ ul {
   padding-left: 15px;
   padding-right: 15px; }
 
+.nav-item:hover .sub-nav {
+  display: block; }
+
 .nav-item > a {
   text-transform: uppercase; }
 
@@ -52,23 +55,21 @@ ul {
   color: #fff;
   font-family: Arial, Helvetica, sans-serif; }
 
-.sub-nav .item-info {
-  display: block;
+.sub-nav, .item-info {
   width: 190px;
   z-index: 1;
   position: absolute;
-  display: block;
   text-transform: capitalize; }
-  .sub-nav .item-info li:hover {
+  .sub-nav li:hover, .item-info li:hover {
     background-color: #f9f9f9; }
-  .sub-nav .item-info > li {
+  .sub-nav > li, .item-info > li {
     padding: 15px 25px;
     border-bottom: 1px solid #f1f1f1;
     text-align: left;
     background-color: #fff;
     position: relative;
     box-shadow: 0px 2px 5px #f1f1f1; }
-    .sub-nav .item-info > li a {
+    .sub-nav > li a, .item-info > li a {
       font-size: 14px;
       padding: 0;
       margin: 0;
@@ -76,6 +77,14 @@ ul {
       letter-spacing: 2px;
       color: #9a9a9a;
       display: block; }
+  .sub-nav .item-info, .item-info .item-info {
+    margin-left: 165px;
+    top: 0;
+    padding-top: 0;
+    padding-left: 25px;
+    width: 220px; }
+  .sub-nav .hover-info:hover .item-info, .item-info .hover-info:hover .item-info {
+    display: block; }
 
 .search1 a::after {
   content: "HOT";
@@ -87,23 +96,27 @@ ul {
   padding: 3px 5px;
   margin-left: 25px; }
 
-.sub-nav.sub-packages .item-info {
-  margin-left: 165px;
-  top: 0;
-  padding-top: 0;
-  padding-left: 25px;
-  width: 220px; }
-  .sub-nav.sub-packages .item-info .carosel a::after {
-    content: "BEST";
-    float: right;
-    background-color: #14b9d5;
-    border-radius: 3px;
-    color: #fff;
-    font-size: 10px;
-    line-height: 10px;
-    padding: 3px 5px; }
+.about-us a::after {
+  content: "NEW";
+  background-color: #1bbc9b;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 10px;
+  line-height: 10px;
+  padding: 3px 5px;
+  margin-left: 20px; }
 
-.tour-package > a::after {
+.carosel a::after {
+  content: "BEST";
+  float: right;
+  background-color: #14b9d5;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 10px;
+  line-height: 10px;
+  padding: 3px 5px; }
+
+.hover-info > a::after {
   content: "";
   float: right;
   border-style: solid;
