@@ -6,16 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet"
-        href="../assets/icon/fontawesome-free-5.15.1-web (1)/fontawesome-free-5.15.1-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/icon/fontawesome-free-5.15.1-web (1)/fontawesome-free-5.15.1-web/css/all.min.css">
     <link rel="stylesheet" href="../assets/icon/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="../assets/css/header.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <div id="wrapper">
         <div id="header">
-            <div id="navigation">
+            <div id="nav">
                 <div class="nav-left">
                     <div class="header-logo">
                         <img src="../assets/image/logo.png" alt="logo">
@@ -111,63 +124,172 @@
                     </ul>
                 </div>
                 <div class="nav-option">
-                    <i class="fas fa-bars"></i>
+                    <i class="ti-align-justify"></i>
                 </div>
             </div>
             <div id="header-slider">
-                <h1>Search your next <u>Holiday</u> </h1>
-                <h6>CHECK OUR BEST PROMOTIONS</h6>
-                <div class="search">
-                    <select name="" id="">
-                        <option value="0">Choose your Destination ...</option>
-                        <option value="0">Europe</option>
-                        <option value="0">&nbsp;&nbsp;- Italy</option>
-                        <option value="0">&nbsp;&nbsp;- Netherlands</option>
-                        <option value="0">Asia</option>
-                        <option value="0">&nbsp;&nbsp;- Thailandia</option>
-                        <option value="0">United States</option>
-                        <option value="0">Oceania</option>
-                    </select>
-                    <div class="icon-search"></div>
-                </div>
-                <div>
-                    <div>
-                        <div>
-                            <a href="">
-                                <img src="" alt="">
-                            </a>
-                            <h6>relax</h6>
-                        </div>
+                <div class="slider-content">
+                    <h1>Search your next <u>Holiday</u> </h1>
+                    <h6>CHECK OUR BEST PROMOTIONS</h6>
+                    <div class="search">
+                        <select name="" id="">
+                            <option value="0">Choose your Destination ...</option>
+                            <option value="0">Europe</option>
+                            <option value="0">&nbsp;&nbsp;- Italy</option>
+                            <option value="0">&nbsp;&nbsp;- Netherlands</option>
+                            <option value="0">Asia</option>
+                            <option value="0">&nbsp;&nbsp;- Thailandia</option>
+                            <option value="0">United States</option>
+                            <option value="0">Oceania</option>
+                        </select>
+                        <i class="ti-search"></i>
                     </div>
-                    <div>
-                        <div>
-                            <a href="">
-                                <img src="" alt="">
-                            </a>
-                            <h6>cultural</h6>
+                    <div class="tourist-act">
+                        <div class="act-item">
+                                <a href="">
+                                    <img src="../assets/image/t-relax.png" alt="">
+                                </a>
+                                <p>relax</p>
                         </div>
-                    </div>
-                    <div>
-                        <div>
-                            <a href="">
-                                <img src="" alt="">
-                            </a>
-                            <h6>sport</h6>
+                        <div class="act-item">
+                                <a href="">
+                                    <img src="../assets/image/t-cultural.png" alt="">
+                                </a>
+                                <p>cultural</p>
                         </div>
-                    </div>
-                    <div>
-                        <div>
-                            <a href="">
-                                <img src="" alt="">
-                            </a>
-                            <h6>history</h6>
+                        <div class="act-item">
+                                <a href="">
+                                    <img src="../assets/image/t-sport.png" alt="">
+                                </a>
+                                <p>sport</p>
+                        </div>
+                        <div class="act-item">
+                                <a href="">
+                                    <img src="../assets/image/t-history.png" alt="">
+                                </a>
+                                <p>history</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div id="container">
-            <div class="destinaation"></div>
+            <div class="destination">
+                <div class="title-des">
+                    <h3>OUR PROPOSALS</h3>
+                    <h2>OUR <u>Destinations</u> </h2>
+                </div>
+                <div class="content-des">
+                    <div class="des-card">
+                        <div class="item-des">
+                            <div class="img-place">
+                                <img src="" alt="">
+                            </div>
+                            <div class="text-place">
+                                <h3>Eroupe</h3>
+                                <h6>3 packages</h6>
+                            </div>
+                        </div>
+                        <div class="overlay">
+                            <h3>packages</h3>
+                            <a href="">Berlin</a>
+                            <a href="">Amsterdam</a>
+                            <a href="">Tuscany</a>
+                            <a href="">View Destiantion</a>
+                        </div>
+                    </div>
+                    <div class="des-card">
+                        <div class="item-des">
+                            <div class="img-place">
+                                <img src="" alt="">
+                            </div>
+                            <div class="text-place">
+                                <h3>Eroupe</h3>
+                                <h6>3 packages</h6>
+                            </div>
+                        </div>
+                        <div class="overlay">
+                            <h3>packages</h3>
+                            <a href="">Berlin</a>
+                            <a href="">Amsterdam</a>
+                            <a href="">Tuscany</a>
+                            <a href="">View Destiantion</a>
+                        </div>
+                    </div>
+                    <div class="des-card">
+                        <div class="item-des">
+                            <div class="img-place">
+                                <img src="" alt="">
+                            </div>
+                            <div class="text-place">
+                                <h3>Eroupe</h3>
+                                <h6>3 packages</h6>
+                            </div>
+                        </div>
+                        <div class="overlay">
+                            <h3>packages</h3>
+                            <a href="">Berlin</a>
+                            <a href="">Amsterdam</a>
+                            <a href="">Tuscany</a>
+                            <a href="">View Destiantion</a>
+                        </div>
+                    </div>
+                    <div class="des-card">
+                        <div class="item-des">
+                            <div class="img-place">
+                                <img src="" alt="">
+                            </div>
+                            <div class="text-place">
+                                <h3>Eroupe</h3>
+                                <h6>3 packages</h6>
+                            </div>
+                        </div>
+                        <div class="overlay">
+                            <h3>packages</h3>
+                            <a href="">Berlin</a>
+                            <a href="">Amsterdam</a>
+                            <a href="">Tuscany</a>
+                            <a href="">View Destiantion</a>
+                        </div>
+                    </div>
+                    <div class="des-card">
+                        <div class="item-des">
+                            <div class="img-place">
+                                <img src="" alt="">
+                            </div>
+                            <div class="text-place">
+                                <h3>Eroupe</h3>
+                                <h6>3 packages</h6>
+                            </div>
+                        </div>
+                        <div class="overlay">
+                            <h3>packages</h3>
+                            <a href="">Berlin</a>
+                            <a href="">Amsterdam</a>
+                            <a href="">Tuscany</a>
+                            <a href="">View Destiantion</a>
+                        </div>
+                    </div>
+                    <div class="des-card">
+                        <div class="item-des">
+                            <div class="img-place">
+                                <img src="" alt="">
+                            </div>
+                            <div class="text-place">
+                                <h3>Eroupe</h3>
+                                <h6>3 packages</h6>
+                            </div>
+                        </div>
+                        <div class="overlay">
+                            <h3>packages</h3>
+                            <a href="">Berlin</a>
+                            <a href="">Amsterdam</a>
+                            <a href="">Tuscany</a>
+                            <a href="">View Destiantion</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="next-holiday"></div>
             <div class="best-beach"></div>
             <div class="best-choices"></div>
