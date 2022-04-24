@@ -16,6 +16,7 @@ ul {
 
 #header {
     color: #fff;
+    position: relative;
 }
 
 #nav, .nav-menu, .nav-left  {
@@ -183,7 +184,7 @@ ul {
 
 .slider-content {
     position: absolute;
-    top: 60%;
+    top: 30%;
     width: 100%;
     z-index: 1;
     text-align: center;
