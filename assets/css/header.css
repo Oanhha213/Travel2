@@ -19,7 +19,7 @@ ul {
   display: flex; }
 
 #nav {
-  padding: 20px 40px;
+  padding: 20px 50px;
   background-color: rgba(0, 0, 0, 0.12);
   position: absolute; }
 
@@ -28,7 +28,7 @@ ul {
   width: 100%; }
 
 .header-logo {
-  padding-left: 15px; }
+  padding: 0 15px; }
   .header-logo img {
     width: 160px; }
 
